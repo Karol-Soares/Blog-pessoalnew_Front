@@ -1,0 +1,12 @@
+.text-decorator{
+    text-decoration: none;
+}
+
+.img-lateral{
+    background-image: url("../../img/abduction.jpg");
+    background-repeat: no-repeat;
+    width: 100vh;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}

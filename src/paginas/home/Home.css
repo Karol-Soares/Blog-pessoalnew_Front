@@ -1,0 +1,40 @@
+.background{
+    background-image: url("../../img/9EULb8.jpg");
+    background-repeat: no-repeat;
+    width: 100vw;
+    min-height: calc(100vh - 64px);
+
+    background-size: cover;
+    background-position: center;
+}
+
+.card{
+    background: linear-gradient(36deg, #03247c90 8%, #f78a4a90 79%);
+}
+
+.form{
+    width: 270px;
+}
+
+.form-input{
+    width: 100%;
+}
+
+.form-title{
+    font-weight: bold;
+    color: #fff;
+}
+
+.MuiInput-underline:after,
+.MuiInput-underline:before{
+    border-bottom: 2px solid #fff!important;
+}
+
+.MuiFormLabel-root,
+.MuiFormLabel-root.Mui-focused,
+.MuiInputBase-root{
+    color: #fff!important;
+}
+
+
+
