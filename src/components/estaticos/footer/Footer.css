@@ -1,0 +1,18 @@
+.rede{
+    font-size: 50px !important;
+    color: white;
+}
+
+.texto{
+    color: white;
+}
+
+.box1{
+    background-color: #03247c; 
+    height: 110px
+}
+
+.box2{
+    background-color: #f78a4a;
+    height: 55px
+}
