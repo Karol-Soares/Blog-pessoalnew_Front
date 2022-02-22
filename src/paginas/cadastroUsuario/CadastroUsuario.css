@@ -1,9 +1,5 @@
-.text-decorator{
-    text-decoration: none;
-}
-
-.img-lateral{
-    background-image: url("../../img/abduction.jpg");
+.imgcadastro{
+    background-image: url(https://payload.cargocollective.com/1/22/708406/14158876/halloween.gif);
     background-repeat: no-repeat;
     width: 100vh;
     min-height: 100vh;
@@ -11,8 +7,11 @@
     background-position: center;
 }
 
-.textolog{
+.textocad{
     font-weight: bold !important;
     color: black !important;
 }
 
+.botaocancel{
+    margin-right: 40px !important;
+}

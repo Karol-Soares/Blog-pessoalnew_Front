@@ -6,6 +6,7 @@
 .back{
     background: linear-gradient(36deg, #03247c 8%, #f78a4a 89%)!important;
     padding-left: 30px;
+    justify-content: end;
 }
 
 .button{

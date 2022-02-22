@@ -9,8 +9,8 @@ function Home() {
                 <Grid alignItems="center" item xs={6}>
 
                     <Box paddingX={20} className='box'>
-                        <Typography variant="h3" gutterBottom color="textSecondary" component="h3" align="center" className='titulo' style={{ color: "white", fontWeight: "bold" }} >Seja bem vindx!</Typography>
-                        <Typography variant="h5" gutterBottom color="textSecondary" component="h5" align="center" className='titulo' style={{ color: "white", fontWeight: "bold" }}>expresse aqui os seus pensamentos e opiniões!</Typography>
+                        <Typography className='titulohome' variant="h3" gutterBottom color="textSecondary" component="h3" align="center" >Seja bem vindx!</Typography>
+                        <Typography className='titulohome' variant="h5" gutterBottom color="textSecondary" component="h5" align="center" >expresse aqui os seus pensamentos e opiniões!</Typography>
                     </Box>
                     <Box display="flex" justifyContent="center">
                         <Box marginRight={1}>
