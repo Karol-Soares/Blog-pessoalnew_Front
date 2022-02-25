@@ -41,7 +41,7 @@ function Login() {
 
                 alert('Usuário logado com sucesso!');
             }catch (error){
-                alert('Dados do usuário inconsistentes. Falha ao logar!');
+                alert('Verifique os dados inseridos. Falha ao logar!');
             }
         }
 

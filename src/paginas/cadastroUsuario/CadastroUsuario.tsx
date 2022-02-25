@@ -48,11 +48,11 @@ function CadastroUsuario(){
     }
     async function onSubmit(e: ChangeEvent<HTMLFormElement>) {
         e.preventDefault()
-        if(confirmarSenha == user.senha){
+        if(confirmarSenha == user.senha && user.senha.length >= 8){
         cadastroUsuario(`/usuarios/cadastrar`, user, setUserResult)
         alert('Usuario cadastrado com sucesso')
         }else{
-            alert('Dados inconsistentes. Favor verificar as informações de cadastro.')
+            alert('Favor verificar os dados inseridos. Falha ao cadastrar!')
         }
     }
 
