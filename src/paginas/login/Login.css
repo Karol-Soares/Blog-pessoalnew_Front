@@ -12,7 +12,24 @@
 }
 
 .textolog{
-    font-weight: bold !important;
-    color: black !important;
+    margin-top: 180px;
+    animation: pulsate 1.0s ease-in-out infinite alternate;
+    color: white !important;
+    text-decoration: none;
 }
+
+.login2{
+    background-image: url('../../img/gaçaxy.png');
+    background-repeat: no-repeat;
+    width: 100vh;
+    min-height: 100vh;
+    background-position: center;
+}
+
+.titulohome2{
+    margin-top: 180px;
+    color: white !important;
+}
+
+
 

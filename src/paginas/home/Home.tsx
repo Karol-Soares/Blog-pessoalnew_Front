@@ -25,8 +25,8 @@ function Home() {
                 <Grid alignItems="center" item xs={6}>
 
                     <Box paddingX={20} className='box'>
-                        <Typography className='titulohome' variant="h3" gutterBottom color="textSecondary" component="h3" align="center" >Seja bem vindx!</Typography>
-                        <Typography className='titulohome' variant="h5" gutterBottom color="textSecondary" component="h5" align="center" >expresse aqui os seus pensamentos e opiniões!</Typography>
+                        <Typography className='titulohome' variant="h3" gutterBottom color="textPrimary" component="h3" align="center">Seja bem vinde!</Typography>
+                        <Typography className='titulohome2' variant="h5" gutterBottom color="textSecondary" component="h5" align="center" >No que você está pensando agora?</Typography>
                     </Box>
                     <Box display="flex" justifyContent="center">
                         <Box marginRight={1}>

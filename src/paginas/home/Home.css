@@ -37,14 +37,45 @@
 }
 
 .titulohome{
-    color: rgb(248, 233, 233); 
-    font-weight: bold;
+    margin-top: 180px;
+    animation: pulsate 2.0s ease-in-out infinite alternate;
+    color: white !important;
+    
+}
+
+@keyframes pulsate {
+    100%{
+        text-shadow:
+        0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 40px #c75c04,
+      0 0 80px #c75c04,
+      0 0 90px #c75c04,
+      0 0 100px #c75c04,
+      0 0 150px #c75c04;
+    }
+    0%{
+        text-shadow:
+      0 0 4px #fff,
+      0 0 10px #fff,
+      0 0 18px #fff,
+      0 0 38px #c75c04,
+      0 0 73px #c75c04,
+      0 0 80px #c75c04,
+      0 0 94px #c75c04,
+      0 0 140px #c75c04;
+    }
+}
+
+.titulohome2{
+    margin-top: 180px;
+    color: white !important;
 }
 
 .box{
     border-color: white; 
     border-radius: 20px;
-    background-color: #f8c595;
     color: white;
 }
 

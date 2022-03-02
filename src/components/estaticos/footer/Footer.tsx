@@ -30,7 +30,7 @@ function Footer() {
                         </Box>
                         <Box>
                         
-                            <Typography variant="subtitle2" gutterBottom className='texto' align="center">Karolina Soares</Typography>
+                            <Typography variant="subtitle2" gutterBottom className='texto' align="center">br.generation.org</Typography>
                         
                         </Box>
                     </Box>
