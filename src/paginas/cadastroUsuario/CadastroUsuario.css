@@ -1,15 +1,17 @@
 .imgcadastro{
-    background-image: url(https://payload.cargocollective.com/1/22/708406/14158876/halloween.gif);
+    background-image: url(../../img/retsuko.png);
     background-repeat: no-repeat;
     width: 100vh;
     min-height: 100vh;
     background-size: cover;
-    background-position: center;
+    background-position: right;
 }
 
 .textocad{
-    font-weight: bold !important;
+    margin-top: 180px;
     color: white !important;
+    text-decoration: none;
+    margin-top: 200px !important;
 }
 
 .botaocancel{
@@ -17,7 +19,7 @@
 }
 
 .cadastro{
-    background-image: url(../../img/orange1.jpg);
+    background-color: #f79517;
     background-repeat: no-repeat;
     width: 100%;
     min-height: 100vh;

@@ -4,7 +4,7 @@
 }
 
 .back{
-    background: linear-gradient(36deg, #03247c 8%, #f78a4a 89%)!important;
+    background: linear-gradient(26deg,  #922133 8%, #830288 50%, #f78a4a 69%)!important;
     padding-left: 30px;
     justify-content: end;
 }
@@ -15,4 +15,8 @@
 
 .text-decorator-none{
         text-decoration: none;
+}
+
+.navright {
+    margin-left: auto!important;
 }

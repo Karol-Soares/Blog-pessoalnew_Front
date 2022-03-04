@@ -8,8 +8,9 @@
 }
 
 .box1{
-    background-color: #03247c; 
-    height: 110px
+    background: linear-gradient(46deg,  #922133 8%, #830288 50%, #f78a4a 69%)!important;
+    padding-left: 30px;
+    justify-content: flex-start;
 }
 
 .box2{

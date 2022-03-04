@@ -4,15 +4,19 @@ import TabPostagem from '../../components/postagens/tabpostagem/TabPostagem';
 import './Home.css';
 import ModalPostagem from '../../components/postagens/modalPostagem/ModalPostagem';
 import { useHistory } from 'react-router-dom';
-import useLocalStorage from 'react-use-localstorage';
+import { useSelector } from 'react-redux';
+import { TokenState } from '../../store/tokens/tokenReducer';
+import { Link } from 'react-router-dom';
 
 function Home() {
 
     let history = useHistory();
-    const [token, setToken] = useLocalStorage('token');
+    const token = useSelector<TokenState, TokenState['tokens']> (
+        (state) => state.tokens
+    );
     
     useEffect(() => {
-      if (token == "") {
+      if (token === "") {
           alert("Você precisa estar logado")
           history.push("/login")
   
@@ -32,11 +36,13 @@ function Home() {
                         <Box marginRight={1}>
                             <ModalPostagem />
                         </Box>
-                        <Button variant="outlined" style={{ borderColor: "white", backgroundColor: "#2A82C0" , color: "white" }}>Ver Postagens</Button>
+                        <Link to='/posts'>
+                            <Button variant="outlined" className='buttonverp'>Ver Postagens</Button>
+                        </Link>
                     </Box>
                 </Grid>
                 
-                <Grid xs={12} className='postagens' style={{ backgroundColor: "white" }}>
+                <Grid xs={12} className='postagens'>
                     <TabPostagem />
                 </Grid>
             </Grid>

@@ -1,7 +1,7 @@
 .background{
-    background-image: url("../../img/9EULb8.jpg");
+    background-image: linear-gradient(to right, #57004f90, #f37a4aea  ) , url("../../img/retsukogif_png.gif");
     background-repeat: no-repeat;
-    width: 100vw;
+    width: 100vh;
     min-height: calc(100vh - 64px);
 
     background-size: cover;
@@ -49,22 +49,22 @@
         0 0 4px #fff,
       0 0 11px #fff,
       0 0 19px #fff,
-      0 0 40px #c75c04,
-      0 0 80px #c75c04,
-      0 0 90px #c75c04,
-      0 0 100px #c75c04,
-      0 0 150px #c75c04;
+      0 0 40px #3f51b5,
+      0 0 80px #3f51b5,
+      0 0 90px #3f51b5,
+      0 0 100px #3f51b5,
+      0 0 150px #3f51b5;
     }
     0%{
         text-shadow:
       0 0 4px #fff,
       0 0 10px #fff,
       0 0 18px #fff,
-      0 0 38px #c75c04,
-      0 0 73px #c75c04,
-      0 0 80px #c75c04,
-      0 0 94px #c75c04,
-      0 0 140px #c75c04;
+      0 0 38px #3f51b5,
+      0 0 73px #3f51b5,
+      0 0 80px #3f51b5,
+      0 0 94px #3f51b5,
+      0 0 140px #3f51b5;
     }
 }
 
@@ -77,6 +77,15 @@
     border-color: white; 
     border-radius: 20px;
     color: white;
+}
+
+.buttonverp{
+    font-weight: bold!important;
+    color: white !important;
+    display: inline-block !important;
+    border: var(--clr-neon) 0.125em solid !important;
+    background-color: #3f51b5!important;
+
 }
 
 

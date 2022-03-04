@@ -3,7 +3,7 @@
 }
 
 .img-lateral{
-    background-image: url("../../img/abduction.jpg");
+    background-image: url("../../img/homeretsuko.jpg.crdownload");
     background-repeat: no-repeat;
     width: 100vh;
     min-height: 100vh;
@@ -16,20 +16,31 @@
     animation: pulsate 1.0s ease-in-out infinite alternate;
     color: white !important;
     text-decoration: none;
+    margin-top: 200px !important;
 }
 
 .login2{
-    background-image: url('../../img/gaçaxy.png');
+    background-color:  #922133;
     background-repeat: no-repeat;
     width: 100vh;
     min-height: 100vh;
+    background-size: cover;
     background-position: center;
 }
 
 .titulohome2{
     margin-top: 180px;
     color: white !important;
+    text-decoration: none;
+    margin-top: 200px !important;
 }
+
+.log{
+    animation: pulsate 1.0s ease-in-out infinite alternate;
+
+}
+
+
 
 
 
