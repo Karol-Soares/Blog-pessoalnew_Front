@@ -7,6 +7,7 @@ import "./Navbar.css"
 import { useDispatch, useSelector } from 'react-redux';
 import { TokenState } from '../../../store/tokens/tokenReducer';
 import { addToken } from '../../../store/tokens/actions';
+import { toast } from 'react-toastify';
 
 function NavBar() {
 
@@ -19,13 +20,23 @@ function NavBar() {
 
     function goLogout(){
         dispatch(addToken(''));
-        alert ('Usuário deslogado')
+        toast.info('Perfil deslogado', {
+            position: "top-right",
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: false,
+            draggable: false,
+            theme: "colored",
+            progress: undefined,
+
+        });
         history.push('/login')
     }
 
     var navbarComponent;
 
-    if(token!== ''){
+    if(token !== ''){
         navbarComponent = <AppBar position="static" className='back'>
         <Toolbar className='bar'>
 
@@ -61,7 +72,7 @@ function NavBar() {
                     </Typography>
                 </Box>
                 </Link>
-                <Link to= '/formularioTema' className="text-decorator-none">
+                <Link to= '/formularioTemas' className="text-decorator-none">
                 <Box mx={1} className = 'cursor'>
                     <Typography variant="h6" color="inherit">
                         Cadastrar tema

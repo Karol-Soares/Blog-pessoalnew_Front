@@ -1,42 +1,58 @@
 import React, {useState, useEffect} from 'react'
 import { Link, useHistory } from 'react-router-dom'
 import { Box, Card, CardActions, CardContent, Button, Typography } from '@material-ui/core';
-import Postagem from '../../../models/Postagem';
+import Postagens from '../../../models/Postagens';
 import './ListaPostagem.css';
 import { useSelector } from 'react-redux';
 import { busca } from '../../../services/Service';
 import { TokenState } from '../../../store/tokens/tokenReducer';
+import { toast } from 'react-toastify';
 
 
-function ListaPostagem() {
+function ListaPostagens() {
 
-  const [posts, setPosts] = useState<Postagem[]>([])
+  const [posts, setPosts] = useState<Postagens[]>([])
   let history = useHistory();
   const token = useSelector<TokenState, TokenState['tokens']> (
     (state) => state.tokens
 );
 
   useEffect(() => {
-    if (token =='') {
-      alert('Você precisa estar logado.')
+    if (token ==='') {
+        toast.error('Você precisa estar logado', {
+            position: "top-right",
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: false,
+            draggable: false,
+            theme: "colored",
+            progress: undefined,
+        });
       history.push('/login')
     }
   }, [token])
 
   async function getPost() {
-    await busca ('postagens', setPosts, {
+    await busca ('/postagens', setPosts, {
       headers: {
         'Authorization': token
       }
     })
   }
 
+  useEffect(() => {
+
+    getPost()
+
+  }, [posts.length])
+
   return (
     <>
     {
       posts.map(post => (
-      <Box m={2} >
-        <Card variant="outlined">
+      <Box m={2}>
+        <Card variant="outlined" className='posts'>
           <CardContent>
             <Typography color="textSecondary" gutterBottom>
               Postagens
@@ -54,14 +70,14 @@ function ListaPostagem() {
           <CardActions>
             <Box display="flex" justifyContent="center" mb={1.5}>
 
-              <Link to={`/formularioPostagem/${post.id}`} className="text-decorator-none" >
+              <Link to={`/formularioPostagens/${post.id}`} className="text-decorator-none" >
                 <Box mx={1}>
-                  <Button variant="contained" className="marginLeft" size='small' color="primary" >
+                  <Button variant="contained"  size='small' color="primary" >
                     atualizar
                   </Button>
                 </Box>
               </Link>
-              <Link to={`/deletarPostagem/${post.id}`} className="text-decorator-none">
+              <Link to={`/deletarPostagens/${post.id}`} className="text-decorator-none">
                 <Box mx={1}>
                   <Button variant="contained" size='small' color="secondary">
                     deletar
@@ -74,7 +90,8 @@ function ListaPostagem() {
       </Box>
       ))
       }
-    </>)
+    </>
+    )
 }
 
-export default ListaPostagem;
+export default ListaPostagens;

@@ -1,3 +1,7 @@
 .text-decorator{
     text-decoration: none !important;
 }
+
+.posts{
+    background-image: linear-gradient(to right, rgb(144, 122, 241), #f372f3ea , #e66a05e3 );
+}

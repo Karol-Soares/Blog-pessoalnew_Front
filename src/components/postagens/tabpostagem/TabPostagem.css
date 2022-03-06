@@ -1,3 +1,15 @@
 .titulo{
     font-weight: bold;
+    margin-top: 180px;
+    animation: pulsate 2.0s ease-in-out infinite alternate;
+    color: white !important;
  }
+
+ .sobre{
+    font-weight: bold;
+    margin-top: 180px;
+    text-align: center !important;
+    color: white !important;
+    
+ }
+

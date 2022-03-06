@@ -1,11 +1,12 @@
 import React, {useState} from 'react'
 import { AppBar, Tab, Tabs, Typography, Box } from '@material-ui/core';
 import { TabContext, TabPanel } from '@material-ui/lab';
-import ListaPostagem from '../listapostagem/ListaPostagem';
+import ListaPostagens from '../listapostagem/ListaPostagens';
 import './TabPostagem.css';
 
 
-function TabPostagem() {
+
+function TabPostagens() {
     const [value, setValue] = useState('1')
     function handleChange(event: React.ChangeEvent<{}>, newValue: string){
         setValue(newValue);
@@ -21,15 +22,29 @@ function TabPostagem() {
         </AppBar>
         <TabPanel value="1" >
           <Box display="flex" flexWrap="wrap" justifyContent="center">
-            <ListaPostagem />
+            <ListaPostagens />
           </Box>
         </TabPanel>
         <TabPanel value="2">
           <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="center" className="titulo">Sobre-nós</Typography>
-          <Typography variant="body1" gutterBottom color="textPrimary" align="justify">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos ut eveniet natus totam et, voluptate dicta tempore alias, odio nobis non eius cupiditate minima inventore pariatur! Ipsum itaque consectetur voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo velit consequuntur suscipit fugiat, nam quis quod quaerat veritatis et, vel ratione beatae, facere neque! Quo animi porro voluptate saepe deleniti? Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore adipisci, officia aut quidem dolorum deserunt iure dolorem doloribus velit nobis quas consequatur at ullam odit, nesciunt est nulla nihil excepturi!</Typography>
+          <Typography variant="body1" gutterBottom color="textPrimary" align="justify" className='sobre'>
+          Aggressive Retsuko tem um tom bastante diferente da adorável menina gatinha, sendo mais próxima da nossa realidade. Em vários momentos do anime, é possível se identificar com a personagem.
+          <br/>
+          <br/>
+          Ela é uma panda vermelho de 26 anos, que trabalha em um escritório de contabilidade, como contadora. Ela particularmente não gosta do que faz, principalmente porque tem com chefe com comportamentos abusivos e misóginos.
+          <br/>
+          <br/>
+          Além disso, ela passa por diversos desafios com os quais nos identificamos.
+          <br/>
+          <br/>
+          A solução para aliviar-se do estresse é cantar heavy-metal no karaokê.
+          <br/>
+          <br/>
+          Ficou curiose? Então embarque nessa jornada com a gente e descubra que não estamos sozinhos!! 
+          </Typography>
         </TabPanel>
       </TabContext>
     </>
   );
 }
-export default TabPostagem;
+export default TabPostagens;

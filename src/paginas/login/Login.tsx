@@ -7,6 +7,7 @@ import './Login.css';
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { addToken } from '../../store/tokens/actions';
+import { toast } from "react-toastify";
 
 
 function Login() {
@@ -41,10 +42,29 @@ function Login() {
             e.preventDefault();
             try{
                 await login (`/usuarios/logar`, userLogin, setToken)
-
-                alert('Usuário logado com sucesso!');
+                toast.success('Login realizado com sucesso', {
+                    position: "top-right",
+                    autoClose: 2000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: false,
+                    draggable: false,
+                    theme: "colored",
+                    progress: undefined,
+                });
             }catch (error){
-                alert('Falha ao logar! Por favor, verifique os dados inseridos.');
+            
+                toast.error('Falha ao logar! Por favor, verifique os dados inseridos.', {
+                    position: "top-right",
+                    autoClose: 2000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: false,
+                    draggable: false,
+                    theme: "colored",
+                    progress: undefined,
+                });
+                
             }
         }
 

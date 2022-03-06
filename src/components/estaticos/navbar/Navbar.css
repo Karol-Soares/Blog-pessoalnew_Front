@@ -1,6 +1,7 @@
 .cursor{
     cursor: pointer;
     color: white;
+    justify-content: flex-start;
 }
 
 .back{
